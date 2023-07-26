@@ -7,10 +7,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class findTextBuildLikeTheBestTest {
+
+public class FindTextBuildLikeTheBestTest {
 
     @Test
-    void findTextTest(){
+    void findTextTest() {
 
         open("https://github.com/");
 
@@ -19,6 +20,7 @@ public class findTextBuildLikeTheBestTest {
         $(byText("Enterprise")).click();
 
         $(".application-main h1").shouldHave(text("Build like the best"));
+
 
 
     }
